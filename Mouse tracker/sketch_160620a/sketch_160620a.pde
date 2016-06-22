@@ -7,7 +7,6 @@ void setup() {
 }
 
 void draw() {
-  for(c
   if(mousePressed == true){
     int i = 0;
     i = 50 + i;
