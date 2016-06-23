@@ -6,22 +6,52 @@ void draw() {
   background(102);
   
   pushMatrix();
-  translate(width*0.2, height*0.5);
+  translate(width*0.5, height*0.5);
   rotate(frameCount / 200.0);
-  polygon(0, 0, 82, 2);  // Triangle
+    if(key == '2'){
+      polygon(0, 0, 82, 2);  // Triangle
+    }
+    else if(key == '3'){
+      polygon(0, 0, 82, 5);
+  }
+  else if(key == '4'){
+      polygon(0, 0, 82, 10);
+  }
+  else if(key == '5'){
+      polygon(0, 0, 82, 15);
+  }
+  else if(key == 't'){
+      polygon(0, 0, 82, 3);
+  }
+  else if(key == 'T'){
+      polygon(0, 0, 82, 3);
+  }
+  else if(key == 'o'){
+      polygon(0, 0, 82, 500);
+  }
+  else if(key == '6'){
+      polygon(0, 0, 82, 25);
+  }
+  else if(key == '7'){
+      polygon(0, 0, 82, 50);
+  }
+  else if(key == '8'){
+      polygon(0, 0, 82, 1);
+  }
+
+  popMatrix();
+  
+  /*pushMatrix();
+  translate(width*0.5, height*0.5);
+  rotate(frameCount / 50.0);
+  polygon(0, 0, 80, 7);  // Icosahedron
   popMatrix();
   
   pushMatrix();
   translate(width*0.5, height*0.5);
-  rotate(frameCount / 50.0);
-  polygon(0, 0, 80, 700);  // Icosahedron
-  popMatrix();
-  
-  pushMatrix();
-  translate(width*0.8, height*0.5);
   rotate(frameCount / -100.0);
   polygon(0, 0, 10, 7);  // Heptagon
-  popMatrix();
+  popMatrix();*/
 }
 
 void polygon(float x, float y, float radius, int npoints) {

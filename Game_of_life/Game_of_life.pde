@@ -1,4 +1,6 @@
 // Size of cells
+import processing.sound.*;
+SoundFile file;
 int cellSize = 5;
 
 // How likely for a cell to be alive at start (in percentage)

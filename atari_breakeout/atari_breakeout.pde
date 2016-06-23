@@ -1,4 +1,6 @@
 // We will have 20 blocks. blocks[i]==1 means it still exists
+import processing.sound.*;
+SoundFile file;
 int[] blocks = new int[20];
 // Variables to keep track of position and speed of ball
 int x = 250 + int(random(-80,80));
@@ -15,6 +17,9 @@ int wait = 0;
 
 // Run once at start
 void setup() {
+  file = new SoundFile(this, "DS33.mp3");
+  file.play();
+  
   int i;
   // 500 pixels wide, 400 pixel height
   // This call will set system variables (width, height)
